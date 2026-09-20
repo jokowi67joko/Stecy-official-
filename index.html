@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STECYMC OFFICIAL</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:url('https://files.catbox.moe/1g5r0i.png') no-repeat center center/cover;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      position:relative;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.65);
+      backdrop-filter:blur(4px);
+      top:0;
+      left:0;
+      z-index:1;
+    }
+
+    .container{
+      position:relative;
+      z-index:2;
+      width:100%;
+      max-width:420px;
+      background:rgba(20,20,20,0.88);
+      border:2px solid #b35900; /* Oranye gelap/muted */
+      border-radius:25px;
+      padding:30px 25px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(179, 89, 0, 0.3);
+      animation:fadeIn 1s ease;
+    }
+
+    .profile-img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid #cc6600;
+      margin-bottom:15px;
+      box-shadow:0 0 15px rgba(204, 102, 0, 0.4);
+    }
+
+    h1{
+      color:#e67300; /* Oranye yang kalem dan tidak neon */
+      margin-bottom:8px;
+      font-size:30px;
+    }
+
+    p{
+      color:#ddd;
+      margin-bottom:25px;
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .link-btn{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      background:linear-gradient(135deg, #d96600, #a64d00); /* Gradien oranye kecoklatan */
+      color:white;
+      padding:15px;
+      margin:12px 0;
+      border-radius:15px;
+      font-size:16px;
+      font-weight:bold;
+      /* Transisi dipercepat ke 0.15s agar tombol terasa lebih responsif / clicky */
+      transition: transform 0.15s ease, box-shadow 0.15s ease; 
+      box-shadow:0 4px 10px rgba(166, 77, 0, 0.4);
+    }
+
+    /* Efek hover yang mulus dan tidak berlebihan */
+    .link-btn:hover{
+      transform: translateY(-2px); 
+      box-shadow:0 6px 15px rgba(166, 77, 0, 0.6);
+    }
+
+    /* Efek clicky saat tombol ditekan */
+    .link-btn:active{
+      transform: translateY(2px) scale(0.98); 
+      box-shadow:0 2px 5px rgba(166, 77, 0, 0.4);
+    }
+
+    .link-btn img{
+      width:30px;
+      height:30px;
+      border-radius:8px;
+      object-fit:cover;
+    }
+
+    .footer{
+      margin-top:25px;
+      color:#aaa;
+      font-size:12px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:500px){
+      h1{
+        font-size:24px;
+      }
+      .link-btn{
+        font-size:14px;
+        padding:13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- FOTO PROFIL -->
+    <img src="https://files.catbox.moe/5td0cu.png" alt="Profile" class="profile-img">
+
+    <!-- NAMA -->
+    <h1>@stecymc</h1>
+
+    <!-- DESKRIPSI -->
+    <p>
+      official website @stecymc<br>
+      website contains download links,<br>
+      social media, information and more.
+    </p>
+
+    <!-- GMAIL BUSINESS -->
+    <!-- Menambahkan "mailto:" agar link email berfungsi -->
+    <a href="mailto:business.stecymc@gmail.com" class="link-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+      Gmail Business
+    </a>
+
+    <!-- YOUTUBE -->
+    <a href="https://youtube.com/@stecymc?si=0gRJsjAc9yV37QYc" class="link-btn" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      YOUTUBE CHANNEL
+    </a>
+
+    <!-- DOWNLOAD -->
+    <a href="https://whatsapp.com/channel/0029VbDDNvC42DclhkqVw502" class="link-btn" target="_blank">
+      <img src="https://files.catbox.moe/ztksvq.png" alt="Download">
+      DOWNLOAD APP, FILES, AND MORE
+    </a>
+
+    <!-- WHATSAPP -->
+    <a href="https://whatsapp.com/channel/0029VbBIniLGZNCsBjso3a35" class="link-btn" target="_blank">
+      <img src="https://files.catbox.moe/ax1vgu.png" alt="WhatsApp">
+      WHATSAPP CHANNEL
+    </a>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      © 2026 @stecymc
+    </div>
+
+  </div>
+
+</body>
+</html>
